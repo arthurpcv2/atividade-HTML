@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th>
+                <h2 align="center">Preencha o formulário</h2>
+            </th>
+            <th>
+                <a href="index.html">Home</a>
+            </th>
+            <th>
+                <a href="contato.html">Contato</a>
+            </th>
+            <th>
+                <a href="sobre.html">Sobre Nós</a>
+            </th>
+        </tr>
+
+    <table width="900" height="800" align="center">
+        <tr>
+            <form>
+            <td>
+                <fieldset>
+                    <legend>Seus Dados</legend>
+    <table border="0" width="250" height="600">
+    
+        <tr>
+            <td>
+    
+        <tr>
+            <br />
+            <td><label>Seu Nome:</label></td>
+            <td><input required type="text" id="nome" name="nome" size="30" maxlength="20"
+                    minlength="1" placeholder="Digite seu nome"></td>
+        </tr>
+        <tr>
+            <td><label>Seu email:</label></td>
+            <td><input required type="email" id="mail" name="mail" size="30" maxlength="20"
+                    minlength="1" placeholder="Digite seu email"></td>
+        </tr>
+        <tr>
+            <td><label>Telefone:</label></td>
+            <td><input required type="text" id="tel" name="tel" size="30" maxlength="20" minlength="1"
+            placeholder="(XX) XX XXXXX-XXXX"></td>
+        </tr>
+        <tr>
+            <td><label>Data de nascimento:</label></td>
+            <td><input required type="date" id="data" name="data" max="2006-12-31" min="1943-01-01"></td>
+        </tr>
+        <tr>
+            <td><label>Sexo:</label></td>
+            <td>
+                <label><input required type="radio" id="sex" name="sexo" value="M"> Masculino</label>
+                <label><input required type="radio" id="sex" name="sexo" value="F"> Feminino</label>
+                <label><input required type="radio" id="sex" name="sexo" value="-"> Outro</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Estado:</label></td>
+            <td>
+                <select required type="combobox" id="estado" name="estado" value="mg">
+                    <option value="">Selecione um estado</option>
+                    <optgroup label="Norte">
+                        <option value="ac">Acre</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="pa">Pará</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rr">Roraima</option>
+                        <option value="to">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="al">Alagoas</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mb">Paraíba</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="se">Sergipe</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="df">Distrito Federal</option>
+                        <option value="go">Goiás</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mt">Mato Grosso</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="es">Espírito Santo</option>
+                        <option value="mj">Minas Gerais</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="sp">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="pr">Paraná</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="sc">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Descreva sua rotina:</label></td>
+            <td><textarea name="descricao" id="descricao" rows="4" cols="25" maxlength="230"></textarea></td>
+        </tr>
+    </table>
+    </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>Sobre Você</legend>
+    
+    <table border="0" width="450" height="615">
+    
+        <tr>
+            <td>
+                <tr>
+                    <td><label>Sua tecnologia favorita:</label></td>
+                    <td><input required type="text" id="tecnologia" name="tecnologia"></td>
+                </tr>
+                <tr>
+                    <td><label>Qual sua área de interesse na tecnologia:</label></td>
+                    <td>
+                        <label><input required type="checkbox" name="interesse" value="Desenvolvimento"> Desenvolvimento</label>
+                        <label><input required type="checkbox" name="interesse" value="Infraestrutura"> Infraestrutura</label>
+                        <label><input required type="checkbox" name="interesse" value="Data Science"> Data Science</label>
+                        <label><input required type="checkbox" name="interesse" value="Segurança"> Segurança</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Quantas horas você trabalha com tecnologia por dia:</label></td>
+                    <td>
+                        <label>De:</label>
+                        <input required type="time" id="hora_inicio">
+                        <label>à:</label>
+                        <input required type="time" id="hora_fim">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Telefone:</label></td>
+                    <td><input required type="tel" id="telefone"></td>
+                </tr>
+                <tr>
+                    <td><label>Seu framework ou biblioteca favorita:</label></td>
+                    <td>
+                        <input required list="frameworks" id="framework" name="framework">
+                        <datalist id="frameworks">
+                            <option value="React"></option>
+                            <option value="Angular"></option>
+                            <option value="Vue.js"></option>
+                            <option value="Django"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>O projeto mais interessante que você já trabalhou:</label></td>
+                    <td>
+                        <input required list="projetos" id="projeto" name="projeto">
+                        <datalist id="projetos">
+                            <option value="Sistema de Gestão"></option>
+                            <option value="E-commerce"></option>
+                            <option value="Aplicativo Mobile"></option>
+                            <option value="Sistema de Automação"></option>
+                        </datalist>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+    </table>
+                </fieldset>
+            </td>
+            <tr>
+                <td colspan="2">
+                    <br><br>
+                    <input required align="right" type="submit" value="Confirmar" id="enviar" name="enviar">
+                    <input required type="reset" value="Limpar formulário" id="limpar" name="limpar">
+                </td>
+            </tr>
+        </form>
+        </tr>
+        <tr>
+            <th>
+                <hr>
+                Rodapé
+                <hr>
+            </th>
+            <th>
+                <hr>
+                <a href="index.html">Home</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <hr>
+            </th>
+            <th>
+                <hr>
+                <hr>
+            </th>
+            <th>
+                <hr>
+                <hr>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
